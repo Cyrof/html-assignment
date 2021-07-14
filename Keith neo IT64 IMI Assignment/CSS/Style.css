@@ -1,0 +1,439 @@
+/*-------------------- Nav Bar ---------------------*/
+.Container {
+	width = 80%;
+	margin : 0 auto;
+}
+
+
+header {
+	background: #373737;
+}
+
+header::after {
+	content : '';
+	display: table;
+	clear: both;
+}
+
+.Logo {
+	float : left;
+	padding: 10px 0;
+}
+
+.Container nav {
+	float : right;
+	margin-right : 35px;
+	position: absolute;
+	vertical-align: middle;
+}
+
+.Container nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.Container nav li {
+	display: inline-block;
+	margin-left: 163px;
+	padding-top: 23px;
+	position: relative;
+}
+
+.Container nav a {
+	color : #8A8A8A;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.Container nav a:hover {
+	color: #8A8A8A;
+}
+
+.Container nav a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	width: 100%;
+	background-color: #DF0000;
+	position: absolute;
+	top: 0%;
+	width: 0%;
+	transition: all ease-in-out 250ms;
+}
+
+.Container Nav a:hover::before {
+	width: 100%;
+}
+
+
+/*-------------------- slide show ---------------------*/
+
+
+
+
+.slider-frame {
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	margin: auto;
+}
+
+@-webkit-keyframes animate{
+	0% {left: 0%;}
+	10% {left: 0%;}
+	20% {left: 100%;}
+	30% {left: 100%;}
+	40% {left: 200%;}
+	50% {left: 200%;}
+	60% {left: 100%;}
+	70% {left: 100%;}
+	80% {left: 0%;}
+	90% {left: 0%;}
+	100% {left: 0%;}
+}
+
+.slides {
+	width: 300%;
+	height: 100%;
+	margin: 0 0 0 -200%;
+	position: relative;
+	-webkit-animation-name: animate;
+	-webkit-animation-duration: 55s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-play-state: running;
+}
+
+
+
+.img-container {
+	float: left;
+	height: 33.33%;
+	width : 33.33%;
+	position: relative;
+}
+
+
+.best-seller img{
+	float:left;
+	width: 33.33%;
+}
+
+
+
+/*-------------------- side nav bar ---------------------*/
+
+
+
+
+.footer-text {
+	text-decoration: none;
+	float: right;
+	text-size: 10px;
+	color: #8A8A8A;	
+}
+
+.list-text {
+	float: right;
+	list-style-type: none;
+	margin-top: 5px;
+	padding: 10px;
+}
+
+.side-navigation {
+	dispaly: flex;
+	position: relative;
+}
+
+.side-navigation .sidebar {
+	position: fixed;
+	width: 200px;
+	height: 75%;
+	background: #707070;
+	padding: 10px 0;
+}
+
+.side-navigation .sidebar ul li{
+	padding: 25px;
+}
+
+.side-navigation .sidebar nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.side-navigation .sidebar ul li a {
+	color: black;
+	display: block;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.side-navigation .sidebar ul li:hover {
+	background: #818181;
+}
+
+.side-navigation .sidebar ul li:hover a {
+	color: #fff;
+}
+
+
+/*-------------------- price list body ---------------------*/
+
+.main {
+	margin-left: 250px;
+}
+
+.main h1 {
+	color: white;
+}
+
+.main p {
+	color: white;
+}
+.main ul li {
+	color: white;
+}
+
+.main a {
+	color: red;
+	text-decoration: none;
+	font-size: 20px;
+	margin-left: 100px;
+}
+
+
+.product-image {
+	float: left;
+	height: 100%;
+	width: 50%;
+	position: relative;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+}
+
+.Add-cart {
+	padding-left: 200px;	
+}
+
+.product-image img {
+	height: 30%;
+	width: 30%;
+}
+
+.main a:hover {
+	color: #616161;
+}
+
+
+
+
+/*-------------------- cart page ---------------------*/
+.table {
+	color: #8A8A8A;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.table th {
+	font-size: 25px;
+}
+
+.table th, td {
+	padding:50px;
+	border-bottom: 1px solid lightgrey;
+	
+}
+
+.table table {
+	margin: auto;
+}
+
+.table caption {
+	font-size: 50px;
+}
+
+.table1 {
+	color: #8A8A8A;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.table1 table {
+	margin-left: 70%;
+}
+
+#textSize {
+	font-size: 25px;
+}
+
+#cb {
+	margin-left: 90%;
+	font-size: 25px;
+}
+
+#checkout {
+	font-size: 25px;
+}
+
+
+/*-------------------- About Us Page ---------------------*/
+.center{
+	display: block;
+	margin: auto;
+}
+
+.margin{
+	float: left;
+	margin-left: 1%;
+}
+
+.background{
+	font-size: 130%;
+	width: 31.5%;
+	height: 40%;
+	text-align: center;
+	color: #FFFFFF;
+	float: left;
+	text-shadow: 2px 2px 2px red;
+	margin-top: 2%;
+	margin-left: 1%;
+}
+
+.motto{
+	font-size: 150%;
+	width: 50%;
+	text-align: center;
+	color: #FFFFFF;
+	float: left;
+	text-shadow: 2px 2px 2px green;
+	margin-top: 1%;
+	margin-left: 25%;
+	margin-right: 10%;
+}
+
+.vision{
+	font-size: 130%;
+	width: 31%;
+	text-align: center;
+	color: #FFFFFF;
+	float: right;
+	text-shadow: 2px 2px 2px blue;
+	margin-top: 5%;
+	margin-right: 1%;
+}
+
+/*-------------------- Contact Us Page ---------------------*/
+
+.fright{
+	float: right;
+	width: 50%;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.fleft{
+	width: 50%;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+div.fright{
+	display: inline;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+/*-------------------- Product Page ---------------------*/
+.pImg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.productTable {
+	color: #8A8A8A;
+}
+
+.productTable, #pTable, th, #tdid{
+}
+
+.productTable table, td, img {
+	text-align: center;
+}
+
+.tableHeader th{
+	font-size: 25px;
+}
+
+#hlink {
+	color: cyan;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.tdLink, #imgP {
+	border-bottom: #373737;
+}
+
+.productTable2 {
+	color: #8A8A8A;
+}
+
+.tableHeader2 {
+	font-size: 25px;
+}
+
+#hlink:hover {
+	color: lightblue;
+}
+
+
+/*-------------------- Account Page ---------------------*/
+
+.formtb{
+	padding: 1%;
+	color: white;
+	font-size: 120%;
+	width: 42%;
+	height: auto;
+	margin-left: 2.5%;
+	border: 1px solid white;
+	border-collapse: collapse;
+	margin-top: 0%;
+}
+
+#submit {
+	border-style: none;
+	width: 25%;
+	margin-left: 75%;
+	display: inline;
+	height: 42px;
+}
+
+#reset {
+	border-style: none;
+	width: 40%;
+	margin-right: 25%;
+	display: inline;
+	height: 42px;
+}
+
+.accountInput {
+	padding: 3%;
+}
+
+.account{
+	float: right;
+	display: inline;
+	margin-right: 2%;
+	margin-top: 2%;
+	text-align: center;
+}
